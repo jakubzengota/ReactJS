@@ -246,10 +246,10 @@ a.tilelinkhtml5
 }
 .Formularz
 {
-
+    margin-top: 5px;
     width: 100%;
     height: 450px;
-    background-color: #9dd696;
+    background-color: #74a8ca;
     
 }
 .trescFormularz
