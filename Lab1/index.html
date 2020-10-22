@@ -4,65 +4,61 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="opis">
+  <meta name="author" content="Jakub Zengota">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="tagi">
+  <title>Lab 1 - Jakub Zengota</title>
 
-  <title>Bare - Start Bootstrap Template</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="css/fontello.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="timer.js"></script>
 
 </head>
 
-<body>
+<body onload="odliczanie();">
+  
+  <div id="container">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <div class="rectangle">
+        <div id="logo"><a href="index.html" class="tilelinkhtml5">Jakub Zengota</a></div>
 
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.5.0</li>
-          <li>jQuery 3.5.1</li>
-        </ul>
+        <div id="zegar"></div>
+        
+        <div style="clear: both;"></div>
+
       </div>
-    </div>
+
+      <div class="square">
+        <div class="tile1">
+          <a href="formularz.html" target="_blank" class="tilelink"><i class="icon-doc-text"></i>Formularz</a></div>
+        <div style="clear: both;"></div>
+
+        <div class="tile2">
+          <a href="podrecznik.html" target="_blank" class="tilelink"><i class="icon-book"></i>Podręcznik</a></div>
+        <div style="clear: both;"></div>
+
+        <div class="tile3">
+          <a href="list.html" target="_blank" class="tilelink"><i class="icon-vector-pencil"></i>List</a></div>
+      </div>
+
+      <div class="square">
+        <div class="tile5"><img src="prof.png" alt="panorama" style="width: 480px;height: 304px"></div>
+        <div class="yt"><a href ="http://youtube.com" target="_blank" class="sociallink"><i class="icon-youtube"></i></a></div>
+        <div class="fb"><a href ="http://facebook.com" target="_blank" class="sociallink"><i class="icon-facebook"></i></a></div>
+        <div class="instagram"><a href ="http://instagram.com" target="_blank" class="sociallink"><i class="icon-instagram"></i></a></div>
+        <div class="snap"><a href ="http://snapchat.com" target="_blank" class="sociallink"><i class="icon-snapchat-square"></i></a></div>
+        <div style="clear:both"></div>
+      </div>
+
+      <div class="container">
+        <div class="napiskoncowy">2020 &copy; jakubzengota@gmail.com</div>
+      </div>
+
   </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
 </body>
 
 </html>

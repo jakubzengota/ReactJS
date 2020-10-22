@@ -1,0 +1,271 @@
+body
+{
+    background-color: #303030;
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+}
+
+#container
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rectangle
+{
+    width: 980px;
+    margin: 20px;
+    text-align: center;
+}
+.square
+{
+    width: 50%;
+    float: left;
+}
+#logo
+{
+    float:left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    width: 600px;
+    text-align: left;
+}
+#zegar
+{
+    float:left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    text-align: left;
+}
+.tile1
+{
+    margin: 10px;
+    width: 480px;
+    height: 142px;
+    background-color: #3095d3;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+.tile1:hover
+{
+    background-color: #2084c2;
+}
+.tile2
+{
+    margin: 10px;
+    width: 480px;
+    height: 142px;
+    background-color: #93c748;
+    float: left;
+}
+.tile2:hover
+{
+    background-color: #6f9737;
+}
+.tile3
+{
+    margin: 10px;
+    width: 480px;
+    height: 142px;
+    background-color: #d34f2a;
+}
+.tile3:hover
+{
+    background-color: #ac4428;
+}
+.tile5
+{
+    margin: 10px;
+    width: 480px;
+    height: 304px;
+    background-color: #666666;
+    
+}
+.yt
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #d94348;
+    float: left;
+}
+.yt:hover
+{
+    background-color: #a53438;
+}
+.fb
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #4668b3;
+    float: left;
+}
+.fb:hover
+{
+    background-color: #354e83;
+}
+.instagram
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #856639;
+    float: left;
+}
+.instagram:hover
+{
+    background-color: #69512d;
+}
+.snap
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #f1e758;
+    float: left;
+}
+.snap:hover
+{
+    background-color: #c2ba47;
+}
+a.tilelink
+{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 480px;
+    height: 142px;
+}
+a.sociallink
+{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+a.tilelinkhtml5
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav1
+{
+    width: 25%;
+    height: 150px;
+    background-color: #d16821;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+.nav1:hover
+{
+    background-color: #8a4618;
+}
+.nav2
+{
+    width: 25%;
+    height: 150px;
+    background-color: #3095d3;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+.nav2:hover
+{
+    background-color: #2084c2;
+}
+.nav3
+{
+    width: 25%;
+    height: 150px;
+    background-color: #93c748;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+.nav3:hover
+{
+    background-color: #6f9737;
+}
+.nav4
+{
+    width: 25%;
+    height: 150px;
+    background-color: #d34f2a;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+.nav4:hover
+{
+    background-color: #ac4428;
+}
+.List
+{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    color: black;
+}
+.trescList
+{
+    padding: 40px;
+    width: 95%;
+    height: auto;
+    color: black;
+    text-align: left;
+}
+.podpis
+{
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: left;
+}
+.Podrecznik
+{
+    margin-top: 5px;
+    width: 100%;
+    height: 700px;
+    background-color: #cfdd82;
+    color: black;
+}
+.trescPodrecznik
+{
+    padding: 40px;
+    width: 95%;
+    height: auto;
+    color: black;
+    text-align: center;
+}
+.Formularz
+{
+
+    width: 100%;
+    height: 450px;
+    background-color: #9dd696;
+    
+}
+.trescFormularz
+{  
+    
+    padding: 20px;
+    
+    text-align: center;
+    height: 100%;
+    color: black;
+    text-align: left;
+    font-size: small;
+}
+.napiskoncowy
+{
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+}
