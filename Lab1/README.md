@@ -9,6 +9,6 @@ List
 Wykresy i diagramy za pomocą charts.js:
 ![strona z podręcznika](./3.png)
 
-Formularz:
-![GitHub Logo](./2.png)
+Przykłady strict mode:
+
 

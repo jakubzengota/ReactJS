@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Lab2</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+	<script scr="js/scripts.js"></script>
+	<script src="js/timer.js"></script>
+
+	<script>
+		function duzelitery() {
+		  var x = document.getElementById("nazwa");
+		  x.value = x.value.toUpperCase();
+		}
+	</script>
+</head>
+
+<body onload="odliczanie();">
+
+	<main>
+		
+		<header>
+
+			<nav class="navbar navbar-dark bg-dark bg-primary navbar-expand-md">
+				<a class="navbar-brand" href="#">Lab2 Jakub Zengota</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"  aria-controls="mainmenu" aria-expanded="false" aria-label="switchnav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="mainmenu">
+
+				</div>
+			</nav>
+
+		</header>
+
+		<section class="center">
+		
+			<div class="container">
+				
+				<header>
+					
+					<h1>Modyfikacja elementów strony</h1>
+					
+				</header>
+					
+				<div class="row container-fluid">
+
+					<div class="col-md-6 col-lg-4 obramowka">
+
+						
+
+						<button type="button" class="btn btn-primary">
+							Przypomnienia <span class="badge badge-light"></span>
+						</button>
+						
+					</div>
+					
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+					
+						<div id="zegar"></div>
+
+
+					</div>
+
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+						
+						<button onclick="pierwszy()">klik</button>
+
+						<p id="pierwszy"></p>
+
+					</div>
+
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+						
+						<input type="text" onkeypress="drugi()">
+						
+					</div>
+
+					<div onmousemove="czwarty(event)" onmouseout="clearCoor()" class="col-md-6 col-lg-4 kordy">
+					
+						
+					
+						<p id="kordy"></p>
+					</div>
+
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+					
+						<input type="text" oncut="piaty()" value="ctrl x">
+
+						<p id="usuntekst"></p>
+
+					</div>
+
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+					
+						<button type="button" onclick="szosty()">ustaw kolor tla</button>
+
+					</div>
+
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+					
+					
+						<input type="text" oncopy="copy()" value="skopiuj tekst">
+
+						<p id="kopiuj"></p>
+
+					</div>
+					
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+					
+						<button onclick="pokazdate()">dzisiejsza data</button>
+						<p id="dzisiaj"></p>
+					</div>
+					
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+					
+						<button onclick="lecikwadrat()">klik</button>
+						<h3 id="kwadrat"></h3>
+
+					</div>					
+					
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						
+						<h4>uppercase</h4>
+						<input type="text" id="nazwa" onchange="duzelitery()">
+					
+					</div>						
+					
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						<div class="kordy" onmouseover="mOver(this)" onmouseout="mOut(this)" 
+						style="background-color:yellow;width:120px;height:100px; padding: 20px;">
+						najedz na kwadrat</div>
+
+
+					</div>						
+				
+					<div class="col-md-6 col-lg-4 obramowka">
+					
+						<div id="myProgress">
+							<div id="myBar"></div>
+						  </div>
+						  <button onclick="move()">progress bar</button> 
+					
+					</div>			
+
+				</div>
+
+			</div>	
+		
+
+		</section>
+		
+	</main>
+
+	<script>
+	// "use strict";
+	// function x(p1, p1) {};
+	// b = 231;
+	// var person = {name: "Kuba", age: 22};
+	// delete person;
+
+    let x = document.getElementsByClassName("badge-light");
+    x[0].innerHTML = 6; // x[0] to pierwszy znaleziony element
+
+	function pierwszy() {
+  		document.getElementById("pierwszy").innerHTML = "Hello World";
+	}
+	
+	function drugi() {
+	alert("error");
+	}
+
+
+	document.getElementById("kordy").onmousemove = function(event) {czwarty(event)};
+
+	function czwarty(e) {
+	var x = e.clientX;
+	var y = e.clientY;
+	var coor = "kordy: (" + x + "," + y + ")";
+	document.getElementById("kordy").innerHTML = coor;
+	}
+
+
+	function piaty() {
+	document.getElementById("usuntekst").innerHTML = "skasuj tekst";
+	}
+
+	function szosty() {
+	document.body.style.backgroundColor = "blue";
+	}
+
+	function copy() {
+	document.getElementById("kopiuj").innerHTML = "skopiowano!!"
+	}
+
+	function pokazdate() {
+	document.getElementById("dzisiaj").innerHTML = Date();
+	}
+
+	function lecikwadrat() {
+	document.getElementById("kwadrat").style.animationDelay = "3s";
+	}
+
+
+	function mOver(obj) {
+	obj.innerHTML = "najechano"
+	}
+
+	var i = 0;
+	function move() {
+	if (i == 0) {
+		i = 1;
+		var elem = document.getElementById("myBar");
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+		if (width >= 100) {
+			clearInterval(id);
+			i = 0;
+		} else {
+			width++;
+			elem.style.width = width + "%";
+		}
+		}
+	}
+	}
+	</script>
+</body>
+</html>
