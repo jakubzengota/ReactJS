@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadania - funkcje</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p class="header">Zadania 1-9(w konsoli)</p>
+    <p class="header">Zdarzenia:</p>
+
+    <!-- zdarzenia -->
+    <!-- #1 -->
+    <div onmousedown="WhichButton(event)">#1 Kliknij którymś przyciskiem myszy na napis
+        <p>
+        0 = LPM<br>
+        1 = Srodkowy przycisk myszy<br>
+        2 = PPM
+        </p>
+      </div>
+      <!-- #2 -->
+    <div id="dwa" class="bloc">#2 Scroll aby zwiększyć napis
+        
+    </div>
+    <!-- #3 -->
+    <div class="trzy">#3 Fullscreen on/off
+    <button onclick="openFullscreen();">Go Fullscreen Mode</button>
+    <button onclick="closeFullscreen();">Close Fullscreen</button>
+    </div>
+
+    <!-- #4 -->
+    <p>#4 wpisz cos.</p>
+    <input type="text" onkeydown="czwarty()">
+    <!-- #5 -->
+    <p>#5 zamiana liter na wielkie.</p>
+    <input type="text" id="fname" onkeyup="piaty()">
+    <!-- #6 -->
+    <div class="trzy">#6 najedz na klocek
+    <img onmouseenter="bigImg(this)" 
+    onmouseleave="normalImg(this)" src="img/6test.png" alt="Kloc" width="32" height="32">
+    </div>
+    <!-- #7 -->
+    <p>#7 kliknij w przycisk.</p>
+    <button id="myBtn">przycisk</button>
+    <p id="siedem">
+    <!-- #8 -->
+    <p>#8 najezdzaj kursorem na przycisk</p>
+    <button id="myBtn2">przycisk</button>
+    <p id="osiem"></p>
+    <!-- #9 -->
+    <p>#9 kliknij dowolny klawisz, a wyswietli się jaki</p>
+    <p id="dziewiec"></p>
+    <!-- #10 -->
+    <p>#10 wykonaj działania 5 * 7 =</p>
+   qe
+
+    <button id="btnlast">wynik</button>
+    
+    <p id="dodaj"></p>
+
+
+    <script src="js/app.js" defer></script>
+    <script src="js/zdarzenia.js" defer></script>
+</body>
+</html>

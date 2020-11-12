@@ -1,0 +1,13 @@
+body {
+    background-color:#6c7279;
+    text-align: center;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: bold;
+    color: #6fdb81;
+}
+.trzy {
+    padding:20px;
+}
