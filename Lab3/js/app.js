@@ -1,5 +1,4 @@
 // dane
-"use strict";
 var exText = "tekst";
 var exTab = [1,2,3,4];
 var pierwszy = 1;
