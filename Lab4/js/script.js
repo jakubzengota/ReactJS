@@ -52,13 +52,14 @@ document.addEventListener("keydown", e => {
 
 // sprawdzanie kolizji
 var checkDead = setInterval(function() {
+    // probranie aktualnej pozycji
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     let blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
     if(blockTop == 130){
         if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
             block.style.animation = "none";
-            // alert("Game Over. score: "+Math.floor(wynik/100));
+            alert("Przegrałeś: "+Math.floor(wynik/100) + " pkt!");
             // location.reload();
             wynik=0;
             block.style.animation = "block 3s infinite linear";
@@ -71,7 +72,7 @@ var checkDead = setInterval(function() {
         console.log(characterTop);
         if(blockLeft<20 && blockLeft>-20 && characterTop<=150){
             block.style.animation = "none";
-            // alert("Game Over. score: "+Math.floor(wynik/100));
+            alert("Przegrałeś: "+Math.floor(wynik/100) + " pkt!");
             // location.reload();
             wynik=0;
             block.style.animation = "block 3s infinite linear";
