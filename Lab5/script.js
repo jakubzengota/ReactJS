@@ -60,7 +60,7 @@ btn3.addEventListener("click", function(){
 });
 
 //PROMISE 2
-function newObject(x,y){
+function newObject1(x,y){
     return ({"companyname": x, "year": y});
 };
 function makeNewObject(id, nr) {
@@ -74,7 +74,7 @@ function makeNewObject(id, nr) {
                     console.log("*TAKS 2*");
                     console.log("Nazwa firmy: " + companyname);
                     console.log("Rok pracy: " + year);
-                    resolve(newObject(companyname,year));
+                    resolve(newObject1(companyname,year));
                 })
         } else {
             reject("Nie ma takiej pracy");
@@ -170,4 +170,63 @@ async function getObjectsAsync(id, b){
 let btn6 = document.getElementById("btn6");
 btn6.addEventListener("click", function(){
     getObjectsAsync(1,0);
+});
+
+//AJAX
+function obliczAjax(id, num){
+    let url = `https://my-json-server.typicode.com/jakubzengota/projektowanie-serwisow-www-21684-185ic/users/${id}`;
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    console.log("*TASK 1*");
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+        if(xhr.status === 200) {
+            let responseObj = xhr.response;
+            let workID = responseObj.works[0].id;
+            let worktime = responseObj.works[0].company[0].worktime;
+            show(oblicz(workID,worktime), num, "ID pracy: ", "Przepracowane lata: ", "Pomnoz: ", workID,worktime);
+        } else {
+            console.log("blad: ", xhr.statusText);
+        }
+    }
+    xhr.onerror = function() {
+        console.log("blad");
+    }
+    xhr.send();
+};
+let btn7 = document.getElementById("btn7");
+btn7.addEventListener("click", function(){
+    obliczAjax(1,1);
+});
+
+//AJAX 2
+function newObject2(x,y){
+    return ({"companyname": x, "workname": y});
+};
+
+function newObjectAjax(id, nr){
+    let url = `https://my-json-server.typicode.com/jakubzengota/projektowanie-serwisow-www-21684-185ic/users/${id}`;
+    let xhr = new XMLHttpRequest();
+    console.log("*TASK 2*");
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.send();
+    xhr.onload = function() {
+        if(xhr.status === 200) {
+            let responseObj = xhr.response;
+            let companyname = responseObj.works[0].company[1].companyname;
+            let workname = responseObj.works[0].workname;
+            show("", nr, "Nazwa firmy: ", "Zawód: ", "Nowy obiekt: ", companyname, workname);
+            console.log(newObject2(companyname,workname));}
+        else {
+            console.log("blad", xhr.status, xhr.statusText);
+        }
+    }
+    xhr.onerror = function() {
+        console.log("blad");
+    }
+};
+let btn8 = document.getElementById("btn8");
+btn8.addEventListener("click", function(){
+    newObjectAjax(1,1);
 });
