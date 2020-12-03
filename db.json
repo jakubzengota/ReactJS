@@ -47,7 +47,12 @@
                         {
                             "id": 121,
                             "companyname": "ZSP",
-                            "worktime": 1
+                            "worktime": 15
+                        },
+                        {
+                            "id": 122,
+                            "companyname": "Gasimy",
+                            "worktime": 10
                         }
                     ]
                 }
