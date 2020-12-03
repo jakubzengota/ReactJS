@@ -1,11 +1,52 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "hello"
-      }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
-  }
+    "users": [
+        {
+            "id": 1,
+            "name": "Karol",
+            "works": [
+                {
+                    "id": 11,
+                    "workname": "Plumber",
+                    "year": 1969,
+                    "company": [
+                        {
+                            "id": 111,
+                            "workname": "The Kiss",
+                            "worktime": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "workname": "Painter",
+                    "year": 2020,
+                    "company": [
+                        {
+                            "id": 121,
+                            "companyname": "Plainsong",
+                            "worktime": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Paweł",
+            "works": [
+                {
+                    "id": 12,
+                    "workname": "Fireworker",
+                    "year": 2002,
+                    "company": [
+                        {
+                            "id": 121,
+                            "companyname": "ZSP",
+                            "worktime": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
