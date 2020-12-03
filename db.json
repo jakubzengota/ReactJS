@@ -11,8 +11,13 @@
                     "company": [
                         {
                             "id": 111,
-                            "workname": "The Kiss",
-                            "worktime": 6
+                            "companyname": "Przepychacz",
+                            "worktime": 5
+                        },
+                        {
+                            "id": 112,
+                            "companyname": "CzystaRura",
+                            "worktime": 5
                         }
                     ]
                 },
