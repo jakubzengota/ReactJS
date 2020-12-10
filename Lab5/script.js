@@ -33,9 +33,9 @@ btn2.addEventListener("click", function(){
 function oblicz(x,y){
     return x*y;
 };
-function pomnoz(id, nr) {
+function pomnoz(id) {
     return new Promise((resolve, reject) => {
-        if(id > 0 && id < 3) {
+        if(id > 0 && id < 2) {
             console.log("*TASK 1 PROMISE*");
             fetch(`https://my-json-server.typicode.com/jakubzengota/projektowanie-serwisow-www-21684-185ic/users/${id}`)
                 .then(response => response.json())
@@ -66,7 +66,7 @@ function newObject1(x,y){
 };
 function makeNewObject(id, nr) {
     return new Promise((resolve, reject) => {
-        if(id > 0 && id < 3) {
+        if(id > 0 && id < 2) {
             fetch(`https://my-json-server.typicode.com/jakubzengota/projektowanie-serwisow-www-21684-185ic/users/${id}`)
                 .then(response => response.json())
                 .then(response => {
@@ -114,7 +114,7 @@ async function getValuesAsync(id,a,b){
             const data = await obliczAsync(id,workID,worktime);
             console.log("dodaj: " + data);
         } else {
-            if(a < 0 || b < 0 || a > 1 || b > 4) {
+            if(a < 0 || b < 0 || a > 1 || b > 2) {
                 console.log("Brak pracy lub nazwy firmy");
             } else {
                 console.log("Blad: ", response.status, response.statusText);
@@ -148,7 +148,7 @@ function makeObjectAsync(id, x, y) {
 async function getObjectsAsync(id, b){
     try {
         const response = await fetch("https://my-json-server.typicode.com/jakubzengota/projektowanie-serwisow-www-21684-185ic/users/2");
-        if (response.status === 200 && b >=0 && b<=5) {
+        if (response.status === 200 && b >=0 && b<=3) {
             let jsonObj = await response.json();
             let companyname = jsonObj.works[0].company[b].companyname;
             let worktime = jsonObj.works[0].company[b].worktime;
