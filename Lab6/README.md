@@ -9,7 +9,7 @@ Wygląd strony:
 Dodawanie zadań:
 ![](img/2.png)
 
-Dodawanie css'a
+Dodawanie css:
 ![](img/4.png)
 
 Props / map:
