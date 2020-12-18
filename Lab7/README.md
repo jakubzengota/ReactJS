@@ -3,7 +3,7 @@
 Utworzyłem prostą aplikację "To Do List" do tworzenia zadań do wykonania wraz z usuwaniem.
 Wykorzystanie listy.
 
-Wygląd strony:
+material-ui install:
 ![](img/1.png)
 
 
