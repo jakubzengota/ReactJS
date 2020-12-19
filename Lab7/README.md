@@ -6,4 +6,9 @@ Wykorzystanie listy.
 material-ui install:
 ![](img/1.png)
 
+bootstrap install:
+![](img/2.png)
 
+npm start
+sudo lsof -i :3000
+sudo kill -9 2618
