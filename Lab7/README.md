@@ -12,3 +12,6 @@ bootstrap install:
 npm start
 sudo lsof -i :3000
 sudo kill -9 2618
+
+
+Stworzyłem responsywną stronę z 3 podstronami.

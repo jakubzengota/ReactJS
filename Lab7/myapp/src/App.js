@@ -15,13 +15,13 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#2a2e29",
+    backgroundColor: "#fff",
     color: "#2a2e29"
   
   },
   hero: {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ictmarketexperts.com/wp-content/uploads/2020/10/cyberpunk-city-lights.jpg')`,
-    height: "500px",
+    height: "400px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -56,16 +56,16 @@ function App() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
           <Typography variant="h6" color="primary">
-            Blog
+            Jakub Zengota
           </Typography>
         </Toolbar>
       </AppBar>
       <Box className={classes.hero}>
-        <Box>React Blog</Box>
+        <Box>React + MUI</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogsContainer}>
           <Typography variant="h4" className={classes.blogTitle}>
-            Articles
+            Zadania
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
@@ -73,14 +73,12 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Contemplative Reptile"
                   height="140"
                   image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
-                  title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Autka
+                    1 podstrona
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                     jazdajazda
@@ -97,14 +95,12 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Contemplative Reptile"
                   height="140"
                   image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
-                  title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Autka
+                    2 podstrona
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                     jazdajazda
@@ -121,14 +117,12 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Contemplative Reptile"
                   height="140"
                   image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
-                  title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Autka
+                    3 podstrona
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                     jazdajazda
