@@ -11,6 +11,10 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Music from './Music';
+import Socials from './Socials';
+import Photos from './Photos';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,11 +51,16 @@ const useStyles = makeStyles((theme) => ({
   media:{
     heigt: 240
   },
+  music: {
+    width: 200,
+  },
 }));
+
 
 function App() {
   const classes = useStyles();
   return (
+    <Router>
     <div className="App">
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
@@ -65,7 +74,7 @@ function App() {
       </Box>
       <Container maxWidth="lg" className={classes.blogsContainer}>
           <Typography variant="h4" className={classes.blogTitle}>
-            Zadania
+            Podstrony
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
@@ -73,15 +82,15 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="140"
-                  image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
+                  height="200"
+                  image="https://zdnet1.cbsistatic.com/hub/i/r/2020/05/11/703e8b53-6149-47dd-9969-f7de6b044b3e/resize/1200xauto/311e6c882043a19e7b68cef0de73456f/apple-music.png"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    1 podstrona
+                  <Link to="/1" style={{ textDecoration: 'none', color: 'black'}}>Music</Link>
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    jazdajazda
+                    Zmiana głośności
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -95,15 +104,15 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="140"
-                  image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
+                  height="200"
+                  image="https://d.wpimg.pl/736425757-1939806294/avatar.jpg"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    2 podstrona
+                  <Link to="/2" style={{ textDecoration: 'none', color: 'black'}}>Avatars</Link>
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    jazdajazda
+                    Zobacz profile
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -117,15 +126,15 @@ function App() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="140"
-                  image="https://i.iplsc.com/bmw-m5-edition-35-years/00083HLKIGP95XAN-C125-F4.jpg"
+                  height="200"
+                  image="https://skolwheels.com/wp-content/uploads/2020/02/matte-black-bmw-m3-f80.jpg"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    3 podstrona
+                  <Link to="/3" style={{ textDecoration: 'none', color: 'black'}}>Car images</Link>
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    jazdajazda
+                    BMW
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -136,9 +145,22 @@ function App() {
             </Grid>
           </Grid>
       </Container>
-      
+      <Switch>
+          <Route path="/1">
+            <Music />
+          </Route>
+          <Route path="/2">
+            <Socials />
+          </Route>
+          <Route path="/3">
+            <Photos />
+          </Route>
+        </Switch>
     </div>
+    </Router>
   );
 }
+
+
 
 export default App;

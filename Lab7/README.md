@@ -9,6 +9,9 @@ material-ui install:
 bootstrap install:
 ![](img/2.png)
 
+react-router install:
+![](img/3.png)
+
 npm start
 sudo lsof -i :3000
 sudo kill -9 2618
