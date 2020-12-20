@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+
 
 
 
@@ -38,13 +39,13 @@ export default function TextMobileStepper() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
     return (
-    <div style={{width: '600px',height: '400px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto'}}>
-      <img style={{width: '600px',height: '400px'}}
+    <div style={{width: '600px',height: '300px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '50px'}}>
+      <img style={{width: '600px',height: '300px'}}
         src={showImages[activeStep].imgPath}
         alt={showImages[activeStep].label}
       />
       <MobileStepper
-      style={{backgroundColor: '#e3e8e8'}}
+      style={{backgroundColor: '#fff'}}
         steps={maxSteps}
         position="static"
         variant="text"
