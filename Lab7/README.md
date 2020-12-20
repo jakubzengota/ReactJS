@@ -37,7 +37,7 @@ Wygląd strony startowej:
 3 Podstrona - wyświetlanie obrazków w karuzeli
 ![](img/7.png)
 ![](img/8.png)
-![](img/12.png)
+
 
 Moim skromnym zdaniem Material-ui bije na głowę bootstrapa. Jest o wiele bardziej przejrzysty, bardziej intuicyjny oraz wszystkie komponenty mozemy w łatwy sposób dostować do swoich wymagań
 
