@@ -13,7 +13,7 @@ Kod apki:
 
 
 funkcje:
-![](img/2.png)
+![qwe](img/2.png)
 
 importy:
 ![](img/3.png)
@@ -24,8 +24,8 @@ Wygląd aplikacji:
 ![](img/6.png)
 
 Polecenie git diff słuzy do zobaczenia rożnic między commitami.
-* czerwone - linia usunięta
-* zielony - linia dodana
+czerwone - linia usunięta
+zielony - linia dodana
 
 Sprawdzmy róznice pomiędzy pierwszym a ostatnim commitem.
 Do tego potrzebujemy id commitów.
