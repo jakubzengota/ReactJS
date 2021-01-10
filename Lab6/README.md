@@ -19,4 +19,4 @@ Props / map:
 
 Import:
 ![](img/3.png)
-
+![](img/7.png)
