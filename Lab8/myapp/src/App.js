@@ -1,7 +1,8 @@
 import './App.css';
 import React, { useState } from 'react'; 
 import useCollapse from 'react-collapsed';
-import { Button, Card, Container} from 'react-bootstrap';
+import { Button, Card,} from 'react-bootstrap';
+
 
 function App() {
   
@@ -10,10 +11,11 @@ function App() {
 
   return (
     <div>
+      
         <Card  style={{width: '75%', marginLeft: 'auto', marginRight: 'auto', marginTop: '50px' }}>
           <Card.Header>Pokaż ukryta wiadość</Card.Header>
           <Card.Body>
-            <Button 
+            <Button variant="primary"
                 {...getToggleProps({
                   onClick: () => setExpanded((prevExpanded) => !prevExpanded),
                 })}
@@ -48,7 +50,7 @@ function ReadMore() {
         {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
-        variant="light"
+        variant="success"
       >
         {isExpanded ? 'Pokaż mniej' : 'Wiecej'}
       </Button>
