@@ -9,7 +9,7 @@ https://reactjsexample.com/a-react-custom-hook-for-creating-flexible-and-accessi
 Do mojego projektu, dodałem bootstrapowe komponenty do poprawienia wyglądu aplikacji.
 
 Kod apki:
-![](img/10.png)
+![](img/10.PNG)
 
 
 funkcje:
