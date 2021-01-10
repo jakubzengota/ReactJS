@@ -14,6 +14,11 @@ funkcje:
 importy:
 ![](img/3.png)
 
+Wygląd aplikacji:
+![](img/4.png)
+![](img/5.png)
+![](img/6.png)
+
 Polecenie git diff słuzy do zobaczenia rożnic między commitami.
 * czerwone - linia usunięta
 * zielony - linia dodana
