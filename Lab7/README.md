@@ -8,7 +8,7 @@ localhost/3000/1/
 localhost/3000/2/
 localhost/3000/3/
 
-material-ui install:
+material-ui install:q
 ![](img/1.png)
 
 bootstrap install:
