@@ -1,7 +1,7 @@
 # Laboratorium nr 8 -  React - aplikacja nr 2 + analiza kodu źródłowego + git difftool
 
 react-collapsed install:
-![](img/1.png)
+![](./img/1.png)
 
 Link do przykladu:
 https://reactjsexample.com/a-react-custom-hook-for-creating-flexible-and-accessible-expand-collapse/
